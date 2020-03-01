@@ -1,0 +1,11 @@
+.container {
+    background-color: #EF0D24;
+    color: #FFF;
+    padding: 20px;
+}
+
+@media (max-width: 950px) {
+    .container {
+        text-align: center;
+    }
+}
