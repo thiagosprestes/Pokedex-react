@@ -25,7 +25,7 @@ function Home() {
       <div className="pokemon-list">
         <ul>
           {pokemons.map((data) => (
-            <ListItem key={data.name} pokemon={data} />
+            <ListItem key={data.name} pokemon={data.name} />
           ))}
         </ul>
       </div>
