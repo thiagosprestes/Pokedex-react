@@ -1,0 +1,44 @@
+.card {
+    background-color: #FFF;
+    margin: 50px;
+    padding: 30px;
+    display: flex;
+}
+
+.card h2 {
+    text-transform: capitalize;
+}
+
+.card img {
+    border: 1px solid #EEE;
+    margin: 10px 0;
+}
+
+.card .pokemon-abilities {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+.card .pokemon-name .pokemon-types {
+    display: flex;
+}
+
+.card .pokemon-name .pokemon-types p {
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 13px;
+    color: #FFF;
+}
+
+.card .pokemon-abilities .pokemon-stats .stat-info {
+    display: flex;
+}
+
+.card .pokemon-abilities .pokemon-stats .stat-info .stat-name {
+    flex-grow: 1;
+}

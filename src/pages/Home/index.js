@@ -9,12 +9,17 @@ import ListItem from '../../components/ListItem';
 
 function Home() {
   const [ pokemons, setPokemons ] = useState([])
+  const [ load, setLoad ] = useState(true)
 
   useEffect(() => {
     async function loadPokemons() {
-      const response = await api.get('/pokemon')
-
-      setPokemons(response.data.results)
+      await api.get('/pokemon')
+      .then(response => {
+        setPokemons(response.data.results)
+      })
+      .finally(() => {
+        setLoad(false)
+      })
     }
 
     loadPokemons()
@@ -22,13 +27,15 @@ function Home() {
 
   return (
     <div className="App">
-      <div className="pokemon-list">
-        <ul>
-          {pokemons.map((data) => (
-            <ListItem key={data.name} pokemon={data.name} />
-          ))}
-        </ul>
-      </div>
+      {!load &&
+        <div className="pokemon-list">
+          <ul>
+            {pokemons.map((data) => (
+              <ListItem key={data.name} pokemon={data.name} />
+            ))}
+          </ul>
+        </div>
+      }
     </div>
   );
 }
