@@ -1,0 +1,13 @@
+.evolutions {
+    display: flex;
+}
+
+.evolution-two {
+    display: flex;
+    flex-direction: column;
+}
+
+.evolutions-three {
+    display: flex;
+    flex-direction: column;
+}

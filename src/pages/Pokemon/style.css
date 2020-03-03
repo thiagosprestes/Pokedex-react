@@ -1,8 +1,20 @@
+.pokemon-data-body {
+    margin: 50px;
+    display: flex;
+}
+
 .card {
     background-color: #FFF;
-    margin: 50px;
     padding: 30px;
     display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-body {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
 }
 
 .card h2 {
@@ -14,18 +26,12 @@
     margin: 10px 0;
 }
 
-.card .pokemon-abilities {
+.card .pokemon-infos .pokemon-types .pokemon-types-body {
     display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    justify-content: center;
+    margin-top: 10px;
 }
 
-.card .pokemon-name .pokemon-types {
-    display: flex;
-}
-
-.card .pokemon-name .pokemon-types p {
+.card .pokemon-infos .pokemon-types .pokemon-types-body p {
     margin-right: 5px;
     padding: 5px;
     border-radius: 3px;
@@ -35,10 +41,58 @@
     color: #FFF;
 }
 
+.card .pokemon-infos .pokemon-infos-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px 0;
+}
+
+.card .pokemon-infos .pokemon-infos-body label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.card .pokemon-abilities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 170px;
+}
+
+.card .pokemon-name {
+    margin-right: 30px;
+}
+
+.card .pokemon-name .pokemon-types {
+    display: flex;
+}
+
+.card .pokemon-abilities .pokemon-stats {
+    margin: 10px 0;
+}
+
 .card .pokemon-abilities .pokemon-stats .stat-info {
     display: flex;
+    margin-bottom: 5px;
 }
 
 .card .pokemon-abilities .pokemon-stats .stat-info .stat-name {
     flex-grow: 1;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.evolution-chain {
+    margin-left: 50px;
+}
+
+@media (max-width: 950px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card .pokemon-abilities {
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
 }
