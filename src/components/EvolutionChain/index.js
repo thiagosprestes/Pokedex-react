@@ -7,7 +7,8 @@ import pokemonImages from '../../utils/pokemonImages'
 import './style.css'
 
 function EvolutionChain({ pokemon }) {
-    const [ secondEvolution, setSecondEvolution ] = useState([])
+    const [ actualEvolution, setActualEvolution] = useState([])
+    const [ evolutions, setEvolutions ] = useState([])
 
     const pokemonDefaultImage = (pokemonName) => {
         return pokemonImages.getSprite(pokemonName)
@@ -17,7 +18,8 @@ function EvolutionChain({ pokemon }) {
         async function loadEvolutions() {
             const response = await api.get(`/evolution-chain/${pokemon}`)
 
-            setSecondEvolution(response.data.chain.evolves_to)
+            setActualEvolution(response.data.chain.species.name)
+            setEvolutions(response.data.chain.evolves_to)
         }
 
         loadEvolutions()
@@ -25,16 +27,20 @@ function EvolutionChain({ pokemon }) {
 
     return (
         <>
-            {secondEvolution.map(second => (
-                <div key={second.species.name} className="evolutions">                    
-                    <div className="evolution-two">
+            {evolutions.map(second => (                
+                <div key={second.species.name} className="evolutions">    
+                    <div className="next-evolution">
+                        <img src={pokemonDefaultImage(actualEvolution)} alt={actualEvolution} />
+                        <span>{actualEvolution}</span>
+                    </div>                
+                    <div className="next-evolution">
                         <img src={pokemonDefaultImage(second.species.name)} alt={second.species.name} />
-                        <h1>{second.species.name}</h1>
+                        <span>{second.species.name}</span>
                     </div>
                     {second.evolves_to.map(third => (
-                        <div className="evolution-three">
+                        <div className="next-evolution">
                             <img src={pokemonDefaultImage(third.species.name)} alt={third.species.name} />
-                            <h1 key={third.species.name}>{third.species.name}</h1>
+                            <span key={third.species.name}>{third.species.name}</span>
                         </div>
                     ))}
                 </div>

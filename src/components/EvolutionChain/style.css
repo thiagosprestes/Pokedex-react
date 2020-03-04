@@ -2,12 +2,13 @@
     display: flex;
 }
 
-.evolution-two {
+.next-evolution {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
-.evolutions-three {
-    display: flex;
-    flex-direction: column;
+.next-evolution span {
+    font-weight: bold;
+    text-transform: capitalize;
 }
