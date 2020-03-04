@@ -81,7 +81,7 @@ function Pokemon({ match }) {
                 <div className="card evolution-chain">
                     <div className="card-header">
                         <h2>Evolution chain</h2>
-                        <EvolutionChain pokemon={match.params.pokemonNumber} />
+                        <EvolutionChain pokemonName={pokemonData.name} />
                     </div>
                 </div>
             </div>

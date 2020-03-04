@@ -40,8 +40,14 @@ const sprites = {
   vulpix: {
     default: url.concat("37.png"),
   },
+  crobat: {
+    default: url.concat("169.png")
+  },
   zubat: {
     default: url.concat("41.png"),
+  },
+  bellossom: {
+    default: url.concat("182.png")
   },
   oddish: {
     default: url.concat("43.png"),
@@ -157,6 +163,9 @@ const sprites = {
   nidoking: {
     default: url.concat("34.png"),
   },
+  cleffa: {
+    default: url.concat("173.png")
+  },
   clefairy: {
     default: url.concat("35.png"),
   },
@@ -165,6 +174,9 @@ const sprites = {
   },
   ninetales: {
     default: url.concat("38.png"),
+  },
+  igglybuff: {
+    default: url.concat("174.png")
   },
   jigglypuff: {
     default: url.concat("39.png"),
@@ -205,6 +217,9 @@ const sprites = {
   poliwrath: {
     default: url.concat("62.png"),
   },
+  politoed: {
+    defult: url.concat("186.png")
+  },
   kadabra: {
     default: url.concat("64.png"),
   },
@@ -238,8 +253,14 @@ const sprites = {
   slowbro: {
     default: url.concat("80.png"),
   },
+  slowking: {
+    default: url.concat("199.png")
+  },
   magneton: {
     default: url.concat("82.png"),
+  },
+  magnezone: {
+    default: url.concat("462.png")
   },
   doduo: {
     default: url.concat("84.png"),
@@ -258,6 +279,9 @@ const sprites = {
   },
   onix: {
     default: url.concat("95.png"),
+  },
+  steelix: {
+    default: url.concat("208.png")
   },
   drowzee: {
     default: url.concat("96.png"),

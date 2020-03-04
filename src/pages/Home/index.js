@@ -13,7 +13,7 @@ function Home() {
 
   useEffect(() => {
     async function loadPokemons() {
-      await api.get('/pokemon')
+      await api.get('/pokemon/?limit=100')
       .then(response => {
         setPokemons(response.data.results)
       })
