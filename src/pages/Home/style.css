@@ -1,0 +1,32 @@
+.pokemon-list {
+    margin: 30px;
+}
+
+.pokemon-list ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.pokemon-list .pagination {
+    margin-top: 30px;
+}
+
+.pokemon-list .pagination button {
+    background-color: #3B4CCA;
+    color: #FFF;
+    font-weight: bold;
+    border: 0;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 0 10px 0 0;
+}
+
+@media (max-width: 950px) {
+    .pokemon-list ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

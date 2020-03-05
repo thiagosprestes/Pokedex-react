@@ -183,7 +183,7 @@ const sprites = {
     chain: 17,
   },
   parasect: {
-    chain: 18,
+    chain: 19,
   },
   venomoth: {
     chain: 49,
