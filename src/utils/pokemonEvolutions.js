@@ -285,31 +285,40 @@ const sprites = {
     chain: 46,
   },
   lickitung: {
-    chain: 47,
-  },
-  koffing: {
     chain: 48,
   },
-  rhyhorn: {
+  lickilicky: {
+    chain: 48,
+  },
+  koffing: {
     chain: 49,
   },
-  tangela: {
+  rhyhorn: {
     chain: 50,
   },
-  kangaskhan: {
-    chain: 51,
-  },
-  horsea: {
+  tangela: {
     chain: 52,
   },
-  goldeen: {
+  tangrowth: {
+    chain: 52
+  },
+  kangaskhan: {
     chain: 53,
   },
-  staryu: {
+  horsea: {
     chain: 54,
   },
-  scyther: {
+  goldeen: {
     chain: 55,
+  },
+  staryu: {
+    chain: 56,
+  },
+  scyther: {
+    chain: 58,
+  },
+  scizor: {
+    chain: 58
   },
   pinsir: {
     chain: 56,
@@ -363,55 +372,91 @@ const sprites = {
     chain: 37,
   },
   muk: {
-    chain: 89,
+    chain: 38,
   },
   haunter: {
-    chain: 93,
+    chain: 40,
   },
   gengar: {
-    chain: 94,
+    chain: 40,
   },
   hypno: {
-    chain: 97,
+    chain: 42,
   },
   marowak: {
-    chain: 105,
+    chain: 46,
+  },
+  tyrogue: {
+    chain: 47,
+  },
+  hitmontop: {
+    chain: 47,
   },
   hitmonlee: {
-    chain: 106,
+    chain: 47,
   },
   hitmonchan: {
-    chain: 107,
+    chain: 47,
   },
   weezing: {
-    chain: 110,
+    chain: 49,
   },
   rhydon: {
-    chain: 112,
+    chain: 50,
+  },
+  rhyperior: {
+    chain: 50
+  },
+  happiny: {
+    chain: 51,
   },
   chansey: {
-    chain: 113,
+    chain: 51,
+  },
+  blissey: {
+    chain: 51,
   },
   seadra: {
-    chain: 117,
+    chain: 54,
+  },
+  kingdra: {
+    chain: 54,
   },
   seaking: {
-    chain: 119,
+    chain: 55,
   },
   starmie: {
-    chain: 121,
+    chain: 56,
+  },
+  "mime-jr": {
+    chain: 57
   },
   "mr-mime": {
-    chain: 122,
+    chain: 57,
   },
   jynx: {
-    chain: 124,
+    chain: 59,
+  },
+  smoochum: {
+    chain: 59,
+  },
+  elekid: {
+    chain: 60,
   },
   electabuzz: {
-    chain: 125,
+    chain: 60,
+  },
+  electivire: {
+    chain: 60,
+  },
+  magby: {
+    chain: 61,
   },
   magmar: {
-    chain: 126,
+    chain: 61,
+  },
+  magmortar: {
+    chain: 61,
   },
   gyarados: {
     chain: 130,
@@ -453,16 +498,16 @@ const sprites = {
     chain: 36,
   },
   cloyster: {
-    chain: 91,
+    chain: 38,
   },
   kingler: {
-    chain: 99,
+    chain: 43,
   },
   electrode: {
-    chain: 101,
+    chain: 44,
   },
   exeggutor: {
-    chain: 103,
+    chain: 45,
   }
 }
 

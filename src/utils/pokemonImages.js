@@ -301,6 +301,9 @@ const sprites = {
   lickitung: {
     default: url.concat("108.png"),
   },
+  lickilicky: {
+    default: url.concat("463.png"),
+  },
   koffing: {
     default: url.concat("109.png"),
   },
@@ -309,6 +312,9 @@ const sprites = {
   },
   tangela: {
     default: url.concat("114.png"),
+  },
+  tangrowth: {
+    default: url.concat("465.png")
   },
   kangaskhan: {
     default: url.concat("115.png"),
@@ -324,6 +330,9 @@ const sprites = {
   },
   scyther: {
     default: url.concat("123.png"),
+  },
+  scizor: {
+    default: url.concat("212.png"),
   },
   pinsir: {
     default: url.concat("127.png"),
@@ -391,6 +400,12 @@ const sprites = {
   marowak: {
     default: url.concat("105.png"),
   },
+  tyrogue: {
+    default: url.concat("236.png"),
+  },
+  hitmontop: {
+    default: url.concat("237.png"),
+  },
   hitmonlee: {
     default: url.concat("106.png"),
   },
@@ -403,11 +418,23 @@ const sprites = {
   rhydon: {
     default: url.concat("112.png"),
   },
+  rhyperior: {
+    default: url.concat("464.png"),
+  },
+  happiny: {
+    default: url.concat("440.png"),
+  },
   chansey: {
     default: url.concat("113.png"),
   },
+  blissey: {
+    default: url.concat("242.png"),
+  },
   seadra: {
     default: url.concat("117.png"),
+  },
+  kingdra: {
+    default: url.concat("230.png"),
   },
   seaking: {
     default: url.concat("119.png"),
@@ -415,17 +442,35 @@ const sprites = {
   starmie: {
     default: url.concat("121.png"),
   },
+  "mime-jr": {
+    default: url.concat("439.png")
+  },
   "mr-mime": {
     default: url.concat("122.png"),
   },
   jynx: {
     default: url.concat("124.png"),
   },
+  smoochum: {
+    default: url.concat("238.png"),
+  },
+  elekid: {
+    default: url.concat("239.png"),
+  },
   electabuzz: {
     default: url.concat("125.png"),
   },
+  electivire: {
+    default: url.concat("466.png"),
+  },
+  magby: {
+    default: url.concat("240.png"),
+  },
   magmar: {
     default: url.concat("126.png"),
+  },
+  magmortar: {
+    default: url.concat("467.png"),
   },
   gyarados: {
     default: url.concat("130.png"),

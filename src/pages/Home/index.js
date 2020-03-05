@@ -30,27 +30,40 @@ function Home() {
   }, [])
 
   async function loadNext() {
+    setLoad(true)
+    
     const nextPageUrl = next.replace('https://pokeapi.co/api/v2', '')
 
-    const response = await api.get(nextPageUrl)
+    await api.get(nextPageUrl)
+    .then(response => {
+      setPokemons(response.data.results)
 
-    setPokemons(response.data.results)
+      setNext(response.data.next)
 
-    setNext(response.data.next)
+      setPrevious(response.data.previous)
+    })
+    .finally(() => {
+      setLoad(false)
+    })
 
-    setPrevious(response.data.previous)
   }
 
   async function loadPrevious() {
+    setLoad(true)
+
     const previousPageUrl = previous.replace('https://pokeapi.co/api/v2', '')
 
-    const response = await api.get(previousPageUrl)
+    await api.get(previousPageUrl)
+    .then(response => {
+      setPokemons(response.data.results)
 
-    setPokemons(response.data.results)
+      setNext(response.data.next)
 
-    setNext(response.data.next)
-
-    setPrevious(response.data.previous)
+      setPrevious(response.data.previous)
+    })
+    .finally(() => {
+      setLoad(false)
+    })
   }
 
   return (
@@ -64,7 +77,7 @@ function Home() {
           </ul>
           <div className="pagination">          
             {previous && <button onClick={loadPrevious}>Previous</button>}
-            {next && <button onClick={loadNext}>Next</button>}
+            {next && next != 'https://pokeapi.co/api/v2/pokemon/?offset=150&limit=30' && (<button onClick={loadNext}>Next</button>)}
           </div>
         </div>
       }

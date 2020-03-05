@@ -29,4 +29,8 @@
     .pokemon-list ul {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .pokemon-list .pagination {
+        text-align: center;
+    }
 }
