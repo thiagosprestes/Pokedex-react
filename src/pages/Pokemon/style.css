@@ -18,6 +18,12 @@
     margin-top: 10px;
 }
 
+.card .evolutions-list .evolutions {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
 .card h2 {
     text-transform: capitalize;
 }

@@ -180,28 +180,28 @@ const sprites = {
     chain: 17,
   },
   gloom: {
-    chain: 17,
+    chain: 18,
   },
   parasect: {
     chain: 19,
   },
   venomoth: {
-    chain: 49,
+    chain: 20,
   },
   dugtrio: {
-    chain: 51,
+    chain: 21,
   },
   persian: {
-    chain: 53,
+    chain: 22,
   },
   golduck: {
-    chain: 55,
+    chain: 23,
   },
   primeape: {
-    chain: 57,
+    chain: 24,
   },
   arcanine: {
-    chain: 59,
+    chain: 25,
   },
   poliwhirl: {
     chain: 26,
@@ -213,40 +213,40 @@ const sprites = {
     chain: 26
   },
   kadabra: {
-    chain: 64,
+    chain: 27,
   },
   alakazam: {
-    chain: 65,
+    chain: 27,
   },
   machoke: {
-    chain: 67,
+    chain: 28,
   },
   machamp: {
-    chain: 68,
+    chain: 28,
   },
   weepinbell: {
-    chain: 70,
+    chain: 29,
   },
   victreebel: {
-    chain: 71,
+    chain: 29,
   },
   tentacruel: {
-    chain: 73,
+    chain: 30,
   },
   graveler: {
-    chain: 75,
+    chain: 31,
   },
   golem: {
-    chain: 76,
+    chain: 31,
   },
   rapidash: {
-    chain: 78,
+    chain: 32,
   },
   slowbro: {
-    chain: 80,
+    chain: 33,
   },
   magneton: {
-    chain: 82,
+    chain: 34,
   },
   doduo: {
     chain: 36,
@@ -321,52 +321,58 @@ const sprites = {
     chain: 58
   },
   pinsir: {
-    chain: 56,
+    chain: 62,
   },
   tauros: {
-    chain: 57,
+    chain: 63,
   },
   magikarp: {
-    chain: 58,
+    chain: 64,
   },
   lapras: {
-    chain: 59,
+    chain: 65,
   },
   ditto: {
-    chain: 60,
+    chain: 66,
   },
   eevee: {
-    chain: 133,
+    chain: 67,
   },
   porygon: {
-    chain: 137,
+    chain: 68,
+  },
+  porygon2: {
+    chain: 68,
+  },
+  "porygon-z": {
+    chain: 68,
   },
   omanyte: {
-    chain: 138,
+    chain: 69,
   },
   kabuto: {
-    chain: 140,
+    chain: 70,
   },
   aerodactyl: {
-    chain: 142,
+    chain: 71,
   },
   articuno: {
-    chain: 144,
+    chain: 73,
   },
   zapdos: {
-    chain: 145,
+    chain: 74,
   },
   moltres: {
-    chain: 146,
+    chain: 75,
   },
   dratini: {
-    chain: 147,
+    chain: 76,
   },
   mewtwo: {
-    chain: 150,
+    chain: 77,
   },
   mew: {
-    chain: 151,
+    chain: 77,
   },
   dewgong: {
     chain: 37,
@@ -459,31 +465,52 @@ const sprites = {
     chain: 61,
   },
   gyarados: {
-    chain: 130,
+    chain: 64,
+  },
+  sylveon: {
+    chain: 67,
   },
   vaporeon: {
-    chain: 134,
+    chain: 67,
+  },
+  glaceon: {
+    chain: 67,
+  },
+  umbreon: {
+    chain: 67,
+  },
+  leafeon: {
+    chain: 67,
+  },
+  espeon: {
+    chain: 67,
   },
   jolteon: {
-    chain: 135,
+    chain: 67,
   },
   flareon: {
-    chain: 136,
+    chain: 67,
+  },
+  flareon: {
+    chain: 67,
   },
   omastar: {
-    chain: 139,
+    chain: 69,
   },
   kabutops: {
-    chain: 141,
+    chain: 70,
   },
   snorlax: {
-    chain: 143,
+    chain: 72,
+  },
+  munchlax: {
+    chain: 72,
   },
   dragonair: {
-    chain: 148,
+    chain: 76,
   },
   dragonite: {
-    chain: 149,
+    chain: 76,
   },
   ivysaur: {
     chain: 1,
@@ -498,7 +525,7 @@ const sprites = {
     chain: 36,
   },
   cloyster: {
-    chain: 38,
+    chain: 39,
   },
   kingler: {
     chain: 43,

@@ -9,6 +9,14 @@
     gap: 20px;
 }
 
+.pokemon-list ul li {
+    transition: transform .1s;
+}
+
+.pokemon-list ul li:hover {
+    transform: scale(1.1);
+}
+
 .pokemon-list .pagination {
     margin-top: 30px;
 }

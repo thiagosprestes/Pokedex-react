@@ -142,6 +142,9 @@ const sprites = {
   arbok: {
     default: url.concat("24.png"),
   },
+  pichu: {
+    default: url.concat("172.png"),
+  },
   pikachu: {
     default: url.concat("25.png"),
   },
@@ -218,7 +221,7 @@ const sprites = {
     default: url.concat("62.png"),
   },
   politoed: {
-    defult: url.concat("186.png")
+    default: url.concat("186.png")
   },
   kadabra: {
     default: url.concat("64.png"),
@@ -355,6 +358,12 @@ const sprites = {
   porygon: {
     default: url.concat("137.png"),
   },
+  porygon2: {
+    default: url.concat("233.png"),
+  },
+  "porygon-z": {
+    default: url.concat("474.png"),
+  },
   omanyte: {
     default: url.concat("138.png"),
   },
@@ -475,8 +484,23 @@ const sprites = {
   gyarados: {
     default: url.concat("130.png"),
   },
+  sylveon: {
+    default: url.concat("700.png"),
+  },
   vaporeon: {
     default: url.concat("134.png"),
+  },
+  glaceon: {
+    default: url.concat("471.png"),
+  },
+  umbreon: {
+    default: url.concat("197.png"),
+  },
+  leafeon: {
+    default: url.concat("470.png"),
+  },
+  espeon: {
+    default: url.concat("196.png"),
   },
   jolteon: {
     default: url.concat("135.png"),
@@ -489,6 +513,9 @@ const sprites = {
   },
   kabutops: {
     default: url.concat("141.png"),
+  },
+  munchlax: {
+    default: url.concat("446.png"),
   },
   snorlax: {
     default: url.concat("143.png"),

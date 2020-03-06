@@ -42,24 +42,26 @@ function EvolutionChain({ pokemonName }) {
     return (
         <>
             {!load && <>
-                {evolutions.map(second => (                
-                    <div key={second.species.name} className="evolutions">   
-                        <div className="next-evolution">
-                            <img src={pokemonDefaultImage(firstEvolution)} alt={firstEvolution} />
-                            <span>{firstEvolution}</span>
-                        </div>                
-                        <div className="next-evolution">
-                            <img src={pokemonDefaultImage(second.species.name)} alt={second.species.name} />
-                            <span>{second.species.name}</span>
-                        </div>
-                        {second.evolves_to.map(third => (
-                            <div key={third.species.name} className="next-evolution">
-                                <img src={pokemonDefaultImage(third.species.name)} alt={third.species.name} />
-                                <span key={third.species.name}>{third.species.name}</span>
+                <div className="evolutions">  
+                    <div className="next-evolution">
+                        <img src={pokemonDefaultImage(firstEvolution)} alt={firstEvolution} />
+                        <span>{firstEvolution}</span>
+                    </div>     
+                    {evolutions.map(second => (   
+                        <React.Fragment key={second.species.name}>                                                 
+                            <div className="next-evolution">
+                                <img src={pokemonDefaultImage(second.species.name)} alt={second.species.name} />
+                                <span>{second.species.name}</span>
                             </div>
-                        ))}
-                    </div>
-                ))}
+                            {second.evolves_to.map(third => (
+                                <div key={third.species.name} className="next-evolution">
+                                    <img src={pokemonDefaultImage(third.species.name)} alt={third.species.name} />
+                                    <span key={third.species.name}>{third.species.name}</span>
+                                </div>
+                            ))}
+                        </React.Fragment>
+                    ))}
+                </div>                
             </>}
         </>
     )
