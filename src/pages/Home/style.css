@@ -33,6 +33,26 @@
     margin: 0 10px 0 0;
 }
 
+.pokemon-list .search-input {
+    margin-bottom: 20px;
+    background-color: #FFF;
+    padding: 20px;
+    width: max-content;
+}
+
+.pokemon-list .search-input input {
+    border: 0;
+    border-bottom: 1px solid #CCC;
+    color: #C4C4C4;
+    background: none;
+    margin-left: 10px;
+}
+
+.pokemon-list .search-input label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
 @media (max-width: 950px) {
     .pokemon-list ul {
         grid-template-columns: repeat(2, 1fr);
@@ -40,5 +60,9 @@
 
     .pokemon-list .pagination {
         text-align: center;
+    }
+
+    .pokemon-list .search-input {
+        width: 100%;
     }
 }

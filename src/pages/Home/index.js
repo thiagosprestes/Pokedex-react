@@ -70,6 +70,10 @@ function Home() {
     <div className="App">
       {!load &&
         <div className="pokemon-list">
+          <div className="search-input">
+            <label htmlFor="search">Search:</label>
+            <input type="text" name="search" id="search" placeholder="Ex: Pikachu" />
+          </div>
           <ul>
             {pokemons.map((data) => (
               <ListItem key={data.name} pokemon={data.name} />
