@@ -491,9 +491,6 @@ const sprites = {
   flareon: {
     chain: 67,
   },
-  flareon: {
-    chain: 67,
-  },
   omastar: {
     chain: 69,
   },

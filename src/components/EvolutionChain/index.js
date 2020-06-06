@@ -1,53 +1,54 @@
 import React, { useState, useEffect } from 'react';
 
-import api from '../../services/api'
+import api from '../../services/api';
 
-import pokemonImages from '../../utils/pokemonImages'
+import pokemonImages from '../../utils/pokemonImages';
 
-import pokemonEvolutions from '../../utils/pokemonEvolutions'
+import pokemonEvolutions from '../../utils/pokemonEvolutions';
 
-import './style.css'
+import './style.css';
 
-function EvolutionChain({ pokemonName }) {
-    const [ firstEvolution, setFirstEvolution ] = useState([])
-    const [ evolutions, setEvolutions ] = useState([])
+export default function EvolutionChain({ pokemonName }) {
+    const [evolutions, setEvolutions] = useState([]);
 
-    const [ load, setLoad ] = useState(true)
+    const [load, setLoad] = useState(true);
 
     function pokemonDefaultImage (data) {
-        return pokemonImages.getSprite(data)
-    }
-    
-    function pokemonEvoChain(){
-        const pokemon = pokemonEvolutions.getChain(pokemonName)
-
-        return pokemon.chain
+        return pokemonImages.getSprite(data);
     }
 
     useEffect(() => {
+        function pokemonEvoChain(){
+            const pokemon = pokemonEvolutions.getChain(pokemonName);
+    
+            return pokemon.chain;
+        }
+        
         async function loadEvolutions() {
             await api.get(`/evolution-chain/${pokemonEvoChain()}`)
             .then(response => {
-                setFirstEvolution(response.data.chain.species.name)
-                setEvolutions(response.data.chain.evolves_to)
+                setEvolutions(response.data.chain);
             })
             .finally(() => {
-                setLoad(false)
-            })
+                setLoad(false);
+            });
         }
-
-        loadEvolutions()
-    }, [])
+        
+        loadEvolutions();
+    }, [pokemonName]);
 
     return (
         <>
-            {!load && <>
+            {!load && (
                 <div className="evolutions">  
                     <div className="next-evolution">
-                        <img src={pokemonDefaultImage(firstEvolution)} alt={firstEvolution} />
-                        <span>{firstEvolution}</span>
+                        <img 
+                            src={pokemonDefaultImage(evolutions.species.name)} 
+                            alt={evolutions.species.name} 
+                        />
+                        <span>{evolutions.species.name}</span>
                     </div>     
-                    {evolutions.map(second => (   
+                    {evolutions.evolves_to.map(second => (   
                         <React.Fragment key={second.species.name}>                                                 
                             <div className="next-evolution">
                                 <img src={pokemonDefaultImage(second.species.name)} alt={second.species.name} />
@@ -62,9 +63,7 @@ function EvolutionChain({ pokemonName }) {
                         </React.Fragment>
                     ))}
                 </div>                
-            </>}
+            )}
         </>
-    )
+    );
 }
-
-export default EvolutionChain;
